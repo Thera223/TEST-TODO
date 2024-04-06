@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <!-- Liens vers les fichiers CSS et polices -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- En-tête -->
+      <h1>Liste des Taches</h1>
+      <!-- Conteneur de l'entrée de tâche, du calendrier et du bouton d'ajout -->
+      <div class="input-container">
+        <input class="todo-input" placeholder="Ajouter une tache..." />
+        <input type="date" id="calendrier" />
+        <button class="add-button">
+          <i class="fa fa-plus-circle"></i>
+        </button>
+      </div>
+      <!-- Filtres -->
+      <div class="filters">
+        <div class="filter" data-filter="completed">Priorité</div>
+        <div class="filter" data-filter="pending">Sécondaire</div>
+        <div class="delete-all">Supprimer Tout</div>
+      </div>
+      <!-- Conteneur des tâches et de l'image vide -->
+      <div class="todos-container">
+        <ul class="todos"></ul>
+        <img class="empty-image" src="image.webp" width="55%" alt="image" />
+      </div>
+    </div>
+    <!-- Script JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
